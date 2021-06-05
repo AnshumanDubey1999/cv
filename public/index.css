@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+.main {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icons {
+  width: 50vw;
+  border-top: 4px solid #FFFFFF;
+  border-bottom: 4px solid #FFFFFF;
+  margin: auto;
+  display: flex;
+}
+
+.icons a {
+  margin: 2vh auto 2vh auto;
+  width: 4vw;
+}
+
+.name {
+  font-weight: 100;
+  font-size: 6.5vw;
+  font-family: Major Mono Display;
+}
+
+.sd {
+  font-weight: 800;
+  font-size: 3vw;
+  text-align: center;
+  font-family: 'Nova Mono', monospace;
+  margin-bottom: 4vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .icons {
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+  }
+  .icons a{
+    margin: 1vh auto 1vh auto;
+  }
+}
