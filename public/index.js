@@ -62,6 +62,10 @@ const highlights = [
 "LabaDabaDubDub"
 ];
 
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+
 let canvas = document.querySelector('canvas');
 canvas.width = innerWidth;
 canvas.height = innerHeight;
@@ -141,6 +145,7 @@ function iGotResized(){
   size = innerWidth > 900 ? 20 : 10;
   boxSize = innerWidth > 900 ? 24 : 12;
   speedConstant = innerWidth > 900 ? 50 : 25;
+  shuffle(highlights);
   do {
     red = Math.round(Math.random()*255)
     green = Math.round(Math.random()*255)
