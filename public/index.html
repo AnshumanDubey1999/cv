@@ -9,8 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Major+Mono+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<body onresize="iGotResized()">
+<body onresize="iGotResized()" onclick="clicked(event)">
   
 <div class="main">
   <h1 class="name">
@@ -21,21 +23,22 @@
   </h1>
   <div class="icons">
     <a href="https://discord.gg/9ybfVkDc">
-      <img src="/icons/discord.svg" alt="">
+      <i class="fab fa-discord"></i>
     </a>
     <a href="https://linkedin.com/in/anshuman-dubey-b95100171">
-      <img src="/icons/linkedin.svg" alt="">
+      <i class="fab fa-linkedin"></i>
     </a>
     <a href="mailto:anshumandubey2k18@gmail.com">
-      <img src="/icons/gmail.svg" alt="">
+      <i class="fas fa-at"></i>
     </a>
     <a href="https://github.com/AnshumanDubey1999">
-    <img src="/icons/github.svg" alt="">
+      <i class="fab fa-github"></i>
     </a>
   </div>
 </div>
-
-  <canvas id="myCanvas" width="200" height="100"></canvas>
+  <canvas id="layer0" width="200" height="100"></canvas>
+  <canvas id="layer1" width="200" height="100"></canvas>
+  <canvas id="layer2" width="200" height="100"></canvas>
   <script src="index.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,59 @@ body {
   overflow: hidden;
   height: 100%;
 }
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+i {
+  transition: all 0.5s;
+  font-size: 3.5vw;
+}
+
+i:hover {
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-at:hover {
+  color: #ea4335;
+  text-shadow: 0 0 0.125em #ea4335;
+}
+
+.fa-linkedin:hover {
+  color: #0A66C2;
+  text-shadow: 0 0 0.125em #0A66C2;
+}
+
+.fa-discord:hover {
+  color: #5865F2;
+  text-shadow: 0 0 0.125em #5865F2;
+}
+
+.fa-github:hover {
+  color: #181717;
+  text-shadow: 0 0 0.125em #181717;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+}
+
+#layer0{
+  /* display:none; */
+  z-index: -3;
+}
+#layer1{
+  z-index: -2;
+  /* display:none; */
+}
+#layer2{
+  z-index: -1;
+  /* display:none; */
+}
+
 
 .main {
   position: absolute;
