@@ -91,6 +91,7 @@ let size = 20;
 let boxSize = size + 4;
 let margin = 2;
 let speedConstant = 50;
+let divConst = 1;
 let font = 'Major Mono Display'
 
 class Character {
@@ -131,8 +132,8 @@ class Stream{
       this.characters.push(
         new Character(
           this.value.charAt(i%(this.value.length)), 
-          this.x*boxSize+12, 
-          i*boxSize+18)
+          this.x*boxSize+12/divConst, 
+          i*boxSize+18/divConst)
       )
     }
     this.intervalID = window.setInterval(() => {
@@ -180,6 +181,7 @@ function iGotResized(){
   size = innerWidth > 900 ? 20 : 10;
   boxSize = innerWidth > 900 ? 24 : 12;
   margin = innerWidth > 900 ? 2: 1;
+  divConst = innerWidth > 900 ? 1: 2;
   speedConstant = innerWidth > 900 ? 50 : 25;
   shuffle(highlights);
   // do {
