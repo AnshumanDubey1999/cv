@@ -282,10 +282,6 @@ function changeColor(){
 }
 
 async function iGotResized(){
-  while(!document.fonts.check('12px Major Mono Display')){
-    await new Promise(r => setTimeout(r, 200));
-  }
-  font = 'Major Mono Display'
   canvas0.width = innerWidth;
   canvas0.height = innerHeight;
   canvas1.width = innerWidth;
@@ -306,6 +302,10 @@ async function iGotResized(){
     window.clearInterval(stream.intervalID)
   })
   streams = [];
+  while(!document.fonts.check('12px Major Mono Display')){
+    await new Promise(r => setTimeout(r, 200));
+  }
+  font = 'Major Mono Display';
   for(let i = 0; i < canvas1.width/boxSize + 1; i++){
     // console.log('Highlight', highlights[i%highlights.length])
     streams.push(new Stream(
