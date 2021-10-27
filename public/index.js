@@ -94,7 +94,7 @@ let boxSize = size + 4;
 let margin = 2;
 let speedConstant = 50;
 let divConst = 1;
-let font = 'Major Mono Display'
+let font = 'monospace';
 
 class Character {
   constructor(value, x, y){
@@ -281,7 +281,11 @@ function changeColor(){
   } while((red + green + blue)>400)
 }
 
-function iGotResized(){
+async function iGotResized(){
+  while(!document.fonts.check('12px Major Mono Display')){
+    await new Promise(r => setTimeout(r, 200));
+  }
+  font = 'Major Mono Display'
   canvas0.width = innerWidth;
   canvas0.height = innerHeight;
   canvas1.width = innerWidth;
