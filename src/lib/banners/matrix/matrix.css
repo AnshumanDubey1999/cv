@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+i {
+  transition: all 0.5s;
+  font-size: 3.5vw;
+}
+
+i:hover {
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-at:hover {
+  color: #ea4335;
+  text-shadow: 0 0 0.125em #ea4335;
+}
+
+.fa-linkedin:hover {
+  color: #0a66c2;
+  text-shadow: 0 0 0.125em #0a66c2;
+}
+
+.fa-code:hover {
+  color: #ffa116;
+  text-shadow: 0 0 0.125em #ffa116;
+}
+
+.fa-github:hover {
+  color: #181717;
+  text-shadow: 0 0 0.125em #181717;
+}
+
+.main {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icons {
+  width: 50vw;
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  margin: auto;
+  display: flex;
+}
+
+.icons a {
+  margin: 2vh auto 2vh auto;
+  width: 4vw;
+}
+
+.name {
+  font-weight: 100;
+  font-size: 6.5vw;
+  font-family: MajorMonoDisplay;
+}
+
+.sd {
+  font-weight: 800;
+  font-size: 3vw;
+  text-align: center;
+  font-family: 'Nova Mono', monospace;
+  margin-bottom: 4vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .icons {
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+  }
+  .icons a {
+    margin: 1vh auto 1vh auto;
+  }
+}
